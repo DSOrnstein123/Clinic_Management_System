@@ -1,0 +1,55 @@
+# Project: CTDL
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o BenhNhan.o DanhSachBenhNhan.o DanhSachChoKham.o TimKiemBenhNhan.o ThongKeBenhNhan.o HeThong.o Menu.o Global.o Utils.o
+LINKOBJ  = main.o BenhNhan.o DanhSachBenhNhan.o DanhSachChoKham.o TimKiemBenhNhan.o ThongKeBenhNhan.o HeThong.o Menu.o Global.o Utils.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"C:/curl-8.11.1_1-win64-mingw/include" -I"C:/json-develop/include/nlohmann" -I"C:/jsoncpp-master/include/json" -I"C:/vcpkg-master/installed/x64-windows/include/nlohmann" -I"C:/vcpkg-master/packages/nlohmann-json_x64-windows/include"
+BIN      = CTDL.exe
+CXXFLAGS = $(CXXINCS) -std=c++11
+CFLAGS   = $(INCS) -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+BenhNhan.o: BenhNhan.cpp
+	$(CPP) -c BenhNhan.cpp -o BenhNhan.o $(CXXFLAGS)
+
+DanhSachBenhNhan.o: DanhSachBenhNhan.cpp
+	$(CPP) -c DanhSachBenhNhan.cpp -o DanhSachBenhNhan.o $(CXXFLAGS)
+
+DanhSachChoKham.o: DanhSachChoKham.cpp
+	$(CPP) -c DanhSachChoKham.cpp -o DanhSachChoKham.o $(CXXFLAGS)
+
+TimKiemBenhNhan.o: TimKiemBenhNhan.cpp
+	$(CPP) -c TimKiemBenhNhan.cpp -o TimKiemBenhNhan.o $(CXXFLAGS)
+
+ThongKeBenhNhan.o: ThongKeBenhNhan.cpp
+	$(CPP) -c ThongKeBenhNhan.cpp -o ThongKeBenhNhan.o $(CXXFLAGS)
+
+HeThong.o: HeThong.cpp
+	$(CPP) -c HeThong.cpp -o HeThong.o $(CXXFLAGS)
+
+Menu.o: Menu.cpp
+	$(CPP) -c Menu.cpp -o Menu.o $(CXXFLAGS)
+
+Global.o: Global.cpp
+	$(CPP) -c Global.cpp -o Global.o $(CXXFLAGS)
+
+Utils.o: Utils.cpp
+	$(CPP) -c Utils.cpp -o Utils.o $(CXXFLAGS)

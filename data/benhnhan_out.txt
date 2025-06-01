@@ -1,0 +1,22 @@
+MA SO     | HO TEN              | TUOI | GIOI TINH | UU TIEN      | TRANG THAI
+-------------------------------------------------------------------------------
+001 | Nguyen Van A | 25 | Nam | Cap cuu | Chua kham
+002 | Tran Thi B | 32 | Nu | Thong thuong | Chua kham
+003 | Le Van C | 60 | Nam | Tai kham | Da kham
+004 | Pham Thi D | 45 | Nu | Cap cuu | Chua kham
+005 | Hoang Van E | 17 | Nam | Thong thuong | Da kham
+006 | Do Thi F | 28 | Nu | Tai kham | Chua kham
+007 | Nguyen Van G | 75 | Nam | Cap cuu | Da kham
+008 | Tran Van H | 55 | Nam | Thong thuong | Chua kham
+009 | Le Thi I | 36 | Nu | Tai kham | Chua kham
+010 | Pham Van J | 80 | Nam | Cap cuu | Da kham
+011 | Nguyen Thi K | 21 | Nu | Thong thuong | Chua kham
+012 | Hoang Thi L | 64 | Nu | Tai kham | Chua kham
+013 | Tran Van M | 42 | Nam | Cap cuu | Da kham
+014 | Le Thi N | 33 | Nu | Thong thuong | Chua kham
+015 | Nguyen Van O | 59 | Nam | Tai kham | Da kham
+016 | Pham Thi P | 26 | Nu | Cap cuu | Chua kham
+017 | Do Van Q | 38 | Nam | Thong thuong | Chua kham
+018 | Nguyen Thi R | 47 | Nu | Tai kham | Da kham
+019 | Le Van S | 29 | Nam | Cap cuu | Chua kham
+020 | Tran Thi T | 22 | Nu | Thong thuong | Chua kham
